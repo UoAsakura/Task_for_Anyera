@@ -23,7 +23,7 @@ class PetAPIList(generics.ListCreateAPIView):
     serializer_class = PetSerializer
     # Объект в котором с помощью контейнера можно указать,
     # какие действия может делать пользователь (любой пользователь).
-    permission_classes = [IsAuthenticatedOrReadOnly]
+    # permission_classes = [IsAuthenticatedOrReadOnly]
     # Активация кастомного класса пагинации.
     pagination_class = PetAPIListPagination
 
